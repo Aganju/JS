@@ -1,17 +1,17 @@
-// Array.prototype.bubbleSort = function () {
-//   sortArr = this.slice();
-//   for (i = 0; i < sortArr.length - 1; i++) {
-//       for (j = 0; j < (sortArr.length - i); j++) {
-//         if( sortArr[j] > sortArr[j + 1] )
-//         {
-//           temp =  sortArr[j];
-//           sortArr[j] = sortArr[j+1];
-//           sortArr[j+1] = temp;
-//         }
-//       }
-//   }
-//   return sortArr;
-// };
+Array.prototype.bubbleSort = function () {
+  sortArr = this.slice();
+  for (i = 0; i < sortArr.length - 1; i++) {
+      for (j = 0; j < (sortArr.length - i); j++) {
+        if( sortArr[j] > sortArr[j + 1] )
+        {
+          temp =  sortArr[j];
+          sortArr[j] = sortArr[j+1];
+          sortArr[j+1] = temp;
+        }
+      }
+  }
+  return sortArr;
+};
 
 String.prototype.subStrings = function () {
   stringArr = this.split('');
